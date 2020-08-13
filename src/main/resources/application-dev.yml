@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.ckcloud.ccsekube.controller
+    title: ctg-ckcloud-ccsekube RESTful APIs
+    description: ctg-ckcloud-ccsekube RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.ckcloud.ccsekube.controller
+        title: actg-ckcloud-ccsekube Open APIs
+        description: ctg-ckcloud-ccsekube Open API
+        version: 1.0.0-SNAPSHOT
